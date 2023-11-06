@@ -38,3 +38,91 @@ Adres URL - https://devstyle.pl/2011/02/23/codingtv-pl-videoblog-o-programowaniu
 ----------------------------------------------------------------------------
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ZAD 1  (KARTA PRACY)
+         WERSJA HTML          ELEMENT           ZAMIENNIK 
+1         HTML 4.01            APPLET              OBJECT
+2         HTML 4.01            MENU                UL
+3         HTML 4.01            DIR                 UL
+4         HTML 4.01            ISINDEX             INPUT
+5         HTML 5.0             BASEFONT            CSS:color,font-familly,font,size
+6         HTML 5.0             STRIKE              CSS:text-decoration
+7         HTML 5.0             S                   CSS:text-decoration
+8         HTML 5.0             U                   CSS:text-decoration
+9         HTML 5.0             FONT                CSS:color,font-familly,font size 
+10        HTML 5.0             CENTER              CSS:text-algin
+
+
+ZAD 2 
+
+
+HTML 4.01                         	                 HTML5.0
+BRAK ZNACZNIKOW MULTIMEDIALNYCH    	        POSIADA ZNACZNIKI MULTIMEDIALNE
+<DIV> ABY ODDZIELIC                             NIE POTRZEBUJE <DIV> ABY ODDZIELIC
+TRUDNO ZARADZIC NIEDOKLADNYM BLEDOM SYNAX       BEZ TRUDU RADZI SOBIE Z BLEDAMI SYNATAX
+
+ZAD 3 
+HTML 4.0       ---
+HTML 4.01      ---
+HTML 5.0    wikipedia
+
+ZAD 1 (SPRAWDZ SWOJE UMUJETNOSCI)
+
+                              OPIS I TEMATYKA                  
+WITRYNA INTERETOWA       grupa powiązanych ze sobą stron internetowych i innych dokumentów udostępnianych w internecie
+PORTAL INTERENTOWY       witryna internetowa zawierająca usługi stanowiące „bramę” do Internetu.
+SKLEP INTERENTOWY        Serwis internetowy dający możliwość kupowania i sprzedawania produktów przez Internet
+BLOG TEKSTOWY            To rodzaj witryny internetowej, którą wyróżniają samodzielnie i specyficznie pisane wpisy, które układane są chronologicznie przez autora.
+WIDEOBLOG                odzaj bloga internetowego, którego zasadniczą treść stanowią pliki filmowe publikowane przez autora w kolejności chronologicznej.
+
+
+ZAD 2
+WORTAL INTERNETOIWY -JEST TO DUZY SERWIS INTERENTOWY ZAWIERAJCAY INFORMAJE Z DANEJ DZIENIDNY CO WIDAC NA OBRAZKU
+
+ZAD 3
+1B
+2B
+3B
+4P
+5P
+
+ZAD 4
+1995 HTML (2.0) PIERWSZE WYDANIE
+1996 HTML (3.2) ZWIEKSZENIE ILOSCI ATRYBUTOW
+1997 HTML (4.0) OBSLUGA WIELU SKRYPTOW
+2008 HTML (5.0) DODANIE ZNACZNIKOW MULTIMEDIALNYCH
+
+ZAD 1 (PODSUMOWANIE)
+A
+
+ZAD 2
+B
+
+ZAD 3
+C
+
+ZAD 4
+B
+
+ZAD 5
+A
+----------------------------------------------------------------------------------
+ZADANIE EGZAMINACYJNE
+WORDPRESS -napisany w języku PHP system zarządzania treścią zaprojektowany pierwotnie do obsługi blogów.
+
+VISUAL STUDIO CODE-Darmowy edytor kodu źródłowego z kolorowaniem składni dla wielu języków
+
+GITHUB-hostingowy serwis internetowy przeznaczony do projektów programistycznych wykorzystujących system kontroli wersji 
