@@ -1,20 +1,30 @@
+01000001 01110010 01110100 01110101 01110010 01001011
 zad1:
-
-
-
-----------------------------------------------------------------------------
+         WERSJA HTML          ELEMENT           ZAMIENNIK 
+1         HTML 4.01            APPLET              OBJECT
+2         HTML 4.01            MENU                UL
+3         HTML 4.01            DIR                 UL
+4         HTML 4.01            ISINDEX             INPUT
+5         HTML 5.0             BASEFONT            CSS:color,font-familly,font,size
+6         HTML 5.0             STRIKE              CSS:text-decoration
+7         HTML 5.0             S                   CSS:text-decoration
+8         HTML 5.0             U                   CSS:text-decoration
+9         HTML 5.0             FONT                CSS:color,font-familly,font size 
+10        HTML 5.0             CENTER              CSS:text-algin
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 zad 2:
 Nowe tagi, m.in.: section, article, header, footer, video, audio, progress;
 Nowe typy pól "input", np. search, url, email, datetime, date, month;
 Możliwość osadzenia MathML i SVG bezpośrednio w dokumencie;
 Nowe atrybuty elementów formularz;
 Szereg nowości w API.
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 zad3:
 HTML 4.0 - https://www.w3.org/TR/1998/REC-html40-19980424/
 HTML 4.01 - https://www.w3.org/TR/html401/
 HTML 5.0 - https://www.w3.org/TR/2011/WD-html5-20110405/
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 zad1:
 Witryna internetowa
 Opis - Witryna internetowa to zbiór stron, adresów URL i podstron, które są umieszczone na jednym serwerze i w ramach jednej domeny. Te strony, zwane stronami internetowymi, zawierają informacje o właścicielu witryny, jego firmie lub na dowolny inny temat.
@@ -35,77 +45,26 @@ Adres URL - https://bedeprogramistka.pl/
 Wideoblog
 Opis - Wideoblog rodzaj bloga internetowego, który zamiast postów tekstowych posługuje się materiałem filmowym. Publikowane wideo to najczęściej krótkie, tematyczne realizacje o funkcji informacyjnej, edukacyjnej bądź rozrywkowej. Najpopularniejszymi kanałami dystrybucji vlogerów są: Youtube oraz Dailymotion.
 Adres URL - https://devstyle.pl/2011/02/23/codingtv-pl-videoblog-o-programowaniu/
-----------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ZAD 1  (KARTA PRACY)
-         WERSJA HTML          ELEMENT           ZAMIENNIK 
-1         HTML 4.01            APPLET              OBJECT
-2         HTML 4.01            MENU                UL
-3         HTML 4.01            DIR                 UL
-4         HTML 4.01            ISINDEX             INPUT
-5         HTML 5.0             BASEFONT            CSS:color,font-familly,font,size
-6         HTML 5.0             STRIKE              CSS:text-decoration
-7         HTML 5.0             S                   CSS:text-decoration
-8         HTML 5.0             U                   CSS:text-decoration
-9         HTML 5.0             FONT                CSS:color,font-familly,font size 
-10        HTML 5.0             CENTER              CSS:text-algin
-
-
-ZAD 2 
-
-
-HTML 4.01                         	                 HTML5.0
-BRAK ZNACZNIKOW MULTIMEDIALNYCH    	        POSIADA ZNACZNIKI MULTIMEDIALNE
-<DIV> ABY ODDZIELIC                             NIE POTRZEBUJE <DIV> ABY ODDZIELIC
-TRUDNO ZARADZIC NIEDOKLADNYM BLEDOM SYNAX       BEZ TRUDU RADZI SOBIE Z BLEDAMI SYNATAX
-
-ZAD 3 
-HTML 4.0       ---
-HTML 4.01      ---
-HTML 5.0    wikipedia
-
-ZAD 1 (SPRAWDZ SWOJE UMUJETNOSCI)
-
-                              OPIS I TEMATYKA                  
-WITRYNA INTERETOWA       grupa powiązanych ze sobą stron internetowych i innych dokumentów udostępnianych w internecie
-PORTAL INTERENTOWY       witryna internetowa zawierająca usługi stanowiące „bramę” do Internetu.
-SKLEP INTERENTOWY        Serwis internetowy dający możliwość kupowania i sprzedawania produktów przez Internet
-BLOG TEKSTOWY            To rodzaj witryny internetowej, którą wyróżniają samodzielnie i specyficznie pisane wpisy, które układane są chronologicznie przez autora.
-WIDEOBLOG                odzaj bloga internetowego, którego zasadniczą treść stanowią pliki filmowe publikowane przez autora w kolejności chronologicznej.
-
-
-ZAD 2
-WORTAL INTERNETOIWY -JEST TO DUZY SERWIS INTERENTOWY ZAWIERAJCAY INFORMAJE Z DANEJ DZIENIDNY CO WIDAC NA OBRAZKU
-
-ZAD 3
-1B
-2B
-3B
-4P
-5P
-
-ZAD 4
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+zad2:
+PORTAL INTERNETOIWY - JEST TO DUZY SERWIS INTERENTOWY ZAWIERAJCAY INFORMAJE Z DANEJ DZIENIDNY CO WIDAC NA OBRAZKU
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+zad3:
+1. błędna
+2. błędna
+3. błędna
+4. poprawna
+5. poprawna 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+zad4:
 1995 HTML (2.0) PIERWSZE WYDANIE
 1996 HTML (3.2) ZWIEKSZENIE ILOSCI ATRYBUTOW
 1997 HTML (4.0) OBSLUGA WIELU SKRYPTOW
 2008 HTML (5.0) DODANIE ZNACZNIKOW MULTIMEDIALNYCH
-
-ZAD 1 (PODSUMOWANIE)
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+PODSUMOWANIE
+ZAD 1 
 A
 
 ZAD 2
@@ -119,10 +78,13 @@ B
 
 ZAD 5
 A
-----------------------------------------------------------------------------------
-ZADANIE EGZAMINACYJNE
-WORDPRESS -napisany w języku PHP system zarządzania treścią zaprojektowany pierwotnie do obsługi blogów.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Zadanie EGZAMINACYJNE:
+VISUAL STUDIO CODE - Darmowy edytor kodu źródłowego z kolorowaniem składni dla wielu języków
 
-VISUAL STUDIO CODE-Darmowy edytor kodu źródłowego z kolorowaniem składni dla wielu języków
+GITHUB - hostingowy serwis internetowy przeznaczony do projektów programistycznych wykorzystujących system kontroli wersji 
 
-GITHUB-hostingowy serwis internetowy przeznaczony do projektów programistycznych wykorzystujących system kontroli wersji 
+CHATGPT - AI które pomaga w tworzeniu różnych kodów
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
