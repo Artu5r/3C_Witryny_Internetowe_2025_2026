@@ -1,1 +1,0 @@
-zad1 Specyfikacja HTML 4 przewiduje trzy wersje deklaracji typu dokumentu (DTD). Napisz przykłady dla każdej z wersji i opisz różnice między nimi
