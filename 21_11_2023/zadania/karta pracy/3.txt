@@ -1,0 +1,7 @@
+<ul> -  do stworzenia listy nieuporządkowanej
+
+<li> - do stworzejia elementu listy
+
+<ol> - do stworzejia listy uporządkowanej
+
+oraz pozostalych znacznkow HTML
