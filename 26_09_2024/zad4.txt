@@ -1,0 +1,10 @@
+Symbol jednostki    Nazwa jednostki Rodzaj jednostki    Opis zastosowania
+px                  piksel          wzgledna            jednostka ta okresla ilosc pojedynczych punktow widocznych na ekranie monitora
+em
+pc
+pt                  punkt
+%
+in
+
+
+
