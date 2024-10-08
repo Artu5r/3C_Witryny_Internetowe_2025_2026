@@ -1,0 +1,11 @@
+Skrypty mogą być wykonywane po stronie klienta lub serwera, W edytorze tekstu wymień wady i zalety wykony. wania skryptów po stronie serwera. Zapisz dokument
+
+Zalety:
+    Bezpieczeństwo: Skrypty po stronie serwera są bezpieczniejsze, ponieważ kod nie jest widoczny dla użytkownika.
+    Obciążenie: Przenosi obciążenie z przeglądarki klienta na serwer.
+    Kontrola: Programista ma większą kontrolę nad środowiskiem wykonawczym skryptu.
+
+Wady:
+    Obciążenie serwera: Może zwiększyć obciążenie serwera, zwłaszcza przy dużej liczbie użytkowników.
+    Zależność od serwera: Wymaga stałego połączenia z serwerem.
+    Szybkość odpowiedzi: Może być wolniejsza niż skrypty po stronie klienta, ponieważ wymaga komunikacji z serwerem.
