@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Game w HTML5</title>
+    <script type="text/javascript">
+        //po uruchomieniu wykonaj:
+        window.addEventListener("load",function () {
+            //sprawdź, czy przeglądarka obsługuje element Canvas
+            var canvas = document.getElementById('gra');
+            if (!canvas.getContext) {return;}
+            ctxMain=canvas.getContext('2d');
+            width=canvas.width;
+            height=canvas.height;
+
+            //dodaj bufor dla elementu canvas
+            canvasBuffer=document.createElement('canvas');
+            canvasBuffer.width=width;
+            canvasBuffer.height=height;
+            ctx = canvasBuffer.getContext('2d');
+
+            //Pobierz zasoby
+            LoadResources();
+
+            //Nasłuchiwanie klawiatury
+            document.addEventListener("keydown", KeyDown, false);
+
+            //Nasłuchiwanie myszki
+            document.addEventListener("mousemove", Follow, false);
+            document.addEventListener("mousedown", Fire, false);
+        }, false);
+        //funkcje pobierające zasoby
+        function LoadResources(){
+            mountains=loadImg('Images/mountains_blurred.png');
+            hills=loadImg('Images/hills.png');
+            ground=loadImg('Images/ground.png');
+            tank=loadImg('Images/tank.png');
+            cloud1= loadImg('Images/cloud1.png');
+            cloud2=loadImg('Images/cloud2.png');
+            sun=loadImg('Images/sun.png');
+            bullet=loadImg('Images/bullet.png');
+            alien=loadImg('Images/alien1.png');
+            setTimeout(checkLoad, 100);
+        }
+
+        function loadImg(path){
+            doPobrania++;
+            var v =new Image();
+            v.src=path;
+            v.addEventListener('load',function(){doPobrania--; }, false);
+            return v;
+        }
+
+        function checkLoad(){
+            if (doPobrania==0){
+                setInterval(DrawGameWorld, 1000 / 16);
+                setInterval(CreateAlien, 1000);
+            }
+            else {
+                setTimeout(checkLoad, 100);
+            }
+        }
+
+        //funkcje rysujące świat gry
+        function DrawGameWorld() {
+            ctx.clearRect(0, 0, width, height);
+            //Niebo
+            ctx.fillStyle= '#6495ED';
+            ctx.fillRect(0, 0, width, height);
+            //góry
+            ctx.drawImage(mountains, 0, height - 401);
+            //Pagórki
+            ctx.drawImage(hills, 0, height - 175);
+            //ziemia
+            ctx.drawImage(ground, 0, height - 86);
+            //słońce
+            sunPos=sunPos + .1;
+            ctx.drawImage(sun, sunPos, 0);
+            //chmurka1
+            ctx.drawImage(cloud1, 150, 50);
+            //chmurka2
+            ctx.drawImage(cloud2, 300, 20);
+            //czołg
+            ctx.drawImage(tank, tankXTarget-43, 644);
+            //obcy
+            DrawAliens ();
+            //Pociski
+            DrawBullets();
+            //wyniki
+            //prześlij bufor na element canvas
+            ctxMain.drawImage(canvasBuffer, 0, 0);
+            DrawScore ();
+        }
+
+        //funkcje do sterowania czołgiem
+        function Follow(e) {
+            tankXTarget= e.clientX;
+        }
+
+        function KeyDown(e){
+            //Klawisz strzałka w lewo
+            if (e.keyCode == 37) {
+                tankXTarget -= 10;
+                dir = -1;
+            } else
+
+            //klawisz sztrzałka w lewo
+            if(e.keyCode == 39) {
+                tankXTarget += 10;
+                dir = 1;
+            } else
+
+            //Klawisz spacja
+            if (e.keyCode == 32)
+            Fire();
+        }
+
+        //funkcja odpowiedzialna za strzały
+        function Fire() {
+            bullets.push(new Bullet(tankXTarget - 8, 644)); }
+            //funkcja wyświetlająca pociski
+        function DrawBullets() {
+            //Usuń pociski z listy
+            for (var i = 0; i< bullets.length; i++) {
+                if(bullets[i].IsDirty==true || bullets[i].Y <=0){
+                    bullets.splice(i, 1);
+                    i--; }
+            }
+            //narysuj pociski
+            var hit = false;
+            for(var i = 0; i < bullets.length; i++) {
+                bullets[i].Y -= 20;
+                //sprawdź, czy pocisk trafił któregoś obcego
+                for(var a = 0;a<aliens.length && hit == false; a++){
+                    if ((Math.abs(aliens[a].X - bullets[i].X)< 70) && (Math.abs(aliens[a].Y - bullets[i].Y) < 62)) {
+                        aliens[a].IsDirty = true;
+                        bullets[i].IsDirty = true;
+                        hit = true;
+                        score++;
+                    }
+                }
+
+                if (!hit)
+                    ctx.drawImage(bullet, bullets[i].X, bullets[i].Y);
+            }
+        }
+
+        function DrawScore() {
+            ctxMain.fillStyle = 'rgb(0,0,0)';
+            ctxMain.font = "bold 1.8em sans-serif";
+            ctxMain.fillText("Score: " + score, 12, 40);
+        }
+
+        //funkcja wyświetlająca obcych
+        function DrawAliens() {
+            //Usuń obcego z ekranu
+            for (var i = 0; i <aliens.length; i++){
+                if (aliens[i].IsDirty == true || aliens[i].X > width) {
+                    aliens.splice(i, 1);
+                    i--; }
+                }
+            //Narysuj obcego
+            for (var i=0; i<aliens.length; i++) {
+                aliens[i].X += aliens[i].Speed;
+                ctx.drawImage(alien, aliens[i].X, aliens[i].Y);
+            }
+        }
+        
+        //funkcja dodająca obcych do listy
+        function CreateAlien() {
+            aliens.push(new Alien(-70, 100 + Math.random() * 200, Math.random() * 10));}
+        //zmienne w aplikacji
+
+        var ctxMain=null;
+        var canvasBuffer;
+        var ctx=null;
+        var width=0;
+        var height=0;
+        //liczba elementów do pobrania
+        var doPobrania=0;
+        //elementy graficzne
+        var background, sky , mountains, hills, ground, tank, cloud1, cloud2, sun, bullet, tire, allien;
+        //pozycja słońca
+        var sunPos=0;
+        //pozycja X czołgu
+        var tankXTarget;
+
+        //zmienne przechowujące informacje o pociskach
+        var bullets = new Array();
+        var Bullet = function (x, y){
+            this.X = x;
+            this.Y = y;
+            this.IsDirty = false; }
+        //zmienne przechowujące informacje o obcych 
+        var aliens = new Array();
+        var Alien = function (x, y, s){
+            this.X = x;
+            this.Y = y;
+            this.Speed = s;
+            this.IsDirty = false;  }
+            //zmienne przechowujące punkty
+            var score = 0;
+    </script>
+</head>
+<body>
+    <canvas id="gra" width="480" height="800"></canvas>
+</body>
+</html>
