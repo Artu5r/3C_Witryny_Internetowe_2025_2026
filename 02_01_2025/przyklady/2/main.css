@@ -1,0 +1,15 @@
+.conatainer{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.box{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
