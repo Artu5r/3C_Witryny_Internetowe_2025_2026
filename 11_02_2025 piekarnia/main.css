@@ -30,15 +30,38 @@ nav a:visited{
     font-size: 16px;
     cursor: pointer;
     position: relative;
-    z-index: 10;
+    z-index: 2;
 }
 
 .imgs {
+    
+}
+
+.i1{
     position: fixed;
     top: -1%;
-    left: 10%;
+    left: 0%;
     transform: scale(0.5);
-    z-index: 5;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.i2{
+    position: fixed;
+    top: -1%;
+    left: 33%;
+    transform: scale(0.5);
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.i3{
+    position: fixed;
+    top: -1%;
+    left: 60%;
+    transform: scale(0.5);
+    z-index: 1;
+    mix-blend-mode: multiply;
 }
 
 main{
