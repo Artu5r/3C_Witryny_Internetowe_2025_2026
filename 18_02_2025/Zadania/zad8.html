@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue-bold {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="text8" onclick="changeStyle()">Kliknij mnie</p>
+
+    <script>
+        function changeStyle() {
+            document.getElementById("text8").classList.add("blue-bold");
+        }
+    </script>
+</body>
+</html>
