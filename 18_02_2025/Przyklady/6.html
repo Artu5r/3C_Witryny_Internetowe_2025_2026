@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Wstawianie danych</title> 
+</head> 
+<body> 
+    <input type="text" id="nameInput" placeholder="Wpisz swoje imię">
+    <button onclick="insertData()">Zapisz</button> 
+    <h2 id="greeting"></h2> 
+
+    <script> 
+        function insertData() { 
+        let name = document.getElementById("nameInput").value; 
+        document.getElementById("greeting").innerText = "Witaj, "+ name + "!";
+        document.getElementById("nameInput").value = "Wpisano: " + name; 
+        } 
+    </script> 
+</body> 
+</html>
