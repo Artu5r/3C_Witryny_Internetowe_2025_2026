@@ -81,6 +81,10 @@ table {
     margin-right: auto;
 }
 
+.hid{
+    display: none;
+}
+
 th, td {
     border: 1px solid sandybrown;
 }

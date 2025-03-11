@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piekarnia</title>
     <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -27,11 +28,12 @@
     </div>
     <main>
         <h3>Wybierz rodzaj wypieków:</h3>
-        <select>
-            <option>WYROBY CUKIERNICZE I CIASTKARSKIE</option>
+        <select id="wyb" onchange="showTable()">
+            <option value="t1">WYROBY CUKIERNICZE I CIASTKARSKIE</option>
+            <option value="t2">WYROBY SŁODKIE</option>
         </select>
         <button>Wybierz</button>
-        <table>
+        <table id="t1" class="hid">
             <thead>
                 <tr>
                     <th>Rodzaj</th>
@@ -75,6 +77,54 @@
                     <td>PIECZYWO MIESZANE</td>
                     <td>Chleb mieszany 4 ziarna</td>
                     <td>0.6</td>
+                    <td>3.45</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="t2" class="hid">
+            <thead>
+                <tr>
+                    <th>Rodzaj</th>
+                    <th>Nazwa</th>
+                    <th>Gramatura</th>
+                    <th>Cena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PIECZYWO MIESZANE</td>
+                    <td>Ciastka</td>
+                    <td>0.8</td>
+                    <td>4.45</td>
+                </tr>
+                <tr>
+                    <td>PIECZYWO MIESZANE</td>
+                    <td>Ciastka z kremem</td>
+                    <td>2</td>
+                    <td>7.05</td>
+                </tr>
+                <tr>
+                    <td>PIECZYWO MIESZANE</td>
+                    <td>Pączek z lukrem</td>
+                    <td>0.7</td>
+                    <td>4.45</td>
+                </tr>
+                <tr>
+                    <td>PIECZYWO MIESZANE</td>
+                    <td>Drożdżówka z budyniem</td>
+                    <td>1</td>
+                    <td>5.45</td>
+                </tr>
+                <tr>
+                    <td>PIECZYWO MIESZANE</td>
+                    <td>Pączek z konfiturą</td>
+                    <td>0.7</td>
+                    <td>4.45</td>
+                </tr>
+                <tr>
+                    <td>PIECZYWO MIESZANE</td>
+                    <td>Drożdżówka</td>
+                    <td>0.8</td>
                     <td>3.45</td>
                 </tr>
             </tbody>
