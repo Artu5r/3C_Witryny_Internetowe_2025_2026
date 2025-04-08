@@ -8,4 +8,5 @@ function wyswietl()
         document.getElementById('num5').value,
     ];
     document.getElementById('tab').innerText = "Tablica: " + zwierzeta.join(", ");
+    document.writeln("Tablica: " + zwierzeta.join(", "));
 }
