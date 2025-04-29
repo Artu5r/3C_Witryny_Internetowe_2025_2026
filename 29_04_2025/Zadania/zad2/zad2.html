@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablica dziesięciu liczb</title>
+</head>
+<body>
+    <h1>Tablica dziesięciu liczb naturalnych</h1>
+    <p id="output"></p>
+
+    <script>
+      var numbers = [];
+      
+      for (var i = 0; i < 10; i++)
+      {
+          numbers[i] = 10 + i;
+      }
+      
+      var result = "";
+      for (var i = 0; i < numbers.length; i++)
+      {
+          result += numbers[i] + " ";
+      }
+      
+      document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>

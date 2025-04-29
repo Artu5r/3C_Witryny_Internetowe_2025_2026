@@ -1,0 +1,10 @@
+A([Start])
+B[Inicjalizacja zmiennych:<br>rows = 10, cols = 10,<br>startNumber = 100,<br>tableArray = []]
+C[Iteracja: dla każdego wiersza (i = 0 do 9)]
+D[Iteracja: dla każdej kolumny (j = 0 do 9)]
+E[Wpisz do tablicy:<br>tableArray[i][j] = startNumber<br>startNumber++]
+F[Zakończenie pętli kolumn dla wiersza i]
+G[Zakończenie pętli wierszy]
+H[Oblicz średnie kolumn:<br>Dla każdej kolumny (j = 0 do 9):<br>- Sumuj elementy<br>- Oblicz średnią]
+I[Generuj kod HTML:<br>- Tabela z wartościami<br>- Lista średnich kolumn]
+J([Stop])

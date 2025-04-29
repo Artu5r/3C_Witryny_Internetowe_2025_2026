@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablica i Średnie Kolumn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    td, th {
+      border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: center;
+      background-color: #fff;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 4px;
+      padding: 4px;
+      background-color: #e0e0e0;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wyniki aplikacji</h1>
+  <div id="results"></div>
+
+  <script>
+    window.onload = function() {
+      const numRows = 10;
+      const numCols = 10;
+      
+      let matrix = [];
+      let currentNumber = 100; 
+      
+      for (let i = 0; i < numRows; i++) {
+        matrix[i] = [];
+        for (let j = 0; j < numCols; j++) {
+          matrix[i][j] = currentNumber;
+          currentNumber++; 
+        }
+      }
+
+      let htmlTable = "<table>";
+      for (let i = 0; i < numRows; i++) {
+        htmlTable += "<tr>";
+        for (let j = 0; j < numCols; j++) {
+          htmlTable += "<td>" + matrix[i][j] + "</td>";
+        }
+        htmlTable += "</tr>";
+      }
+      htmlTable += "</table>";
+
+      let averages = [];
+      for (let col = 0; col < numCols; col++) {
+        let sum = 0;
+        for (let row = 0; row < numRows; row++) {
+          sum += matrix[row][col];
+        }
+        averages[col] = (sum / numRows).toFixed(2);
+      }
+
+      let averagesHtml = "<h2>Średnie w kolumnach</h2><ul>";
+      for (let col = 0; col < numCols; col++) {
+        averagesHtml += "<li>Kolumna " + (col + 1) + ": " + averages[col] + "</li>";
+      }
+      averagesHtml += "</ul>";
+
+      document.getElementById("results").innerHTML = htmlTable + averagesHtml;
+    }
+  </script>
+</body>
+</html>

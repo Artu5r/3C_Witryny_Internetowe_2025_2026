@@ -1,0 +1,12 @@
+Zad1:
+Tablice jednowymiarowe:
+	Przechowywanie ocen uczniów: Tablica, w której każdy element odpowiada ocenie z danego przedmiotu, umożliwia szybkie obliczenie średniej, znalezienie najwyższej czy 	najniższej oceny.
+	Lista numerów seryjnych produktów: Umożliwia łatwe przechodzenie po elementach, wyszukiwanie konkretnego numeru lub iterację w celu wykonania operacji (np. walidacji).
+
+Tablice wielowymiarowe:
+	Macierz danych (np. plansza gry): Użyteczne przy tworzeniu planszy do gry, np. kółko i krzyżyk, Sudoku lub przy reprezentowaniu mapy, gdzie wiersze i kolumny 	odpowiadają układowi pól.
+	Przechowywanie pikseli obrazu: Każdy element macierzy reprezentuje kolor piksela, co pozwala na operacje przetwarzania obrazu (np. filtrację lub skalowanie).
+
+Tablice asocjacyjne:
+	Słownik wyrazów: Kluczem może być słowo, a wartością – jego definicja. Ułatwia szybkie wyszukiwanie informacji.
+	Lista kontaktów: Kluczem np. jest nazwisko, a wartością – numer telefonu lub adres e-mail, co umożliwia efektywne mapowanie i wyszukiwanie danych.
