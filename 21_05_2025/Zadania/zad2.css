@@ -1,0 +1,15 @@
+.image-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+  
+img {
+    width: 300px;
+    transition: filter 0.5s ease;
+}
+  
+.grayscale {
+    filter: grayscale(100%);
+}
+  
