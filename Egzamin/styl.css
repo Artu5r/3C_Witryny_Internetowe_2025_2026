@@ -5,6 +5,7 @@
 aside{
     width: 20%;
     height: 610px;
+    float: left;
 }
 
 img{
@@ -12,13 +13,14 @@ img{
     height: 610px;
 }
 
-header nav footer{
+header, footer, nav{
     background-color: MediumPurple;
     color: white;
     width: 80%;
     height: 50px;
     text-align: center;
     text-shadow: 4px DimGray;
+    float: right;
 }
 
 nav{
@@ -29,11 +31,10 @@ main{
     background-color: Thistle;
     width: 80%;
     height: 450px;
-                            background-color: paskiprzewiljania;
-
+    float: right;
 }
 
-ul button{
+button{
     float: right;
     background-color: MediumPurple;
     color: white;
@@ -54,7 +55,10 @@ ul{
 
 li{
     padding: 10px;
-                        background-color: parzyste lelemanety inny kolor;
+}
+
+li:nth-child(even){
+    background-color: #DDCADD;
 }
 
 li:hover{

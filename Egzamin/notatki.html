@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planer zadań</title>
     <link rel="stylesheet" href="styl.css">
-    <script>
-
-    </script>
+    <script src="skrypt.js"></script>
 </head>
 <body>
     <aside>
@@ -17,17 +15,17 @@
         <h2>Moje zadania</h2>
     </header>
     <nav>
-        <input type="text" name="" id="" placeholder="Dodaj zadanie...”">
-        <button>Dodaj</button>
+        <input type="text" id="pole" placeholder="Dodaj zadanie...">
+        <button onclick="dodaj()">Dodaj</button>
     </nav>
     <main>
-        <ul>
-            <li>Wyprowadzić psa<button>Wykonane</button></li>
-            <li>Gimnastyka<button>Wykonane</button></li>
-            <li>Zakupy<button>Wykonane</button></li>
-            <li>Spacer z kumplem<button>Wykonane</button></li>
-            <li>Odrabianie lekcji z młodszą siostrą<button>Wykonane</button></li>
-            <li>Projekt na geografię<button>Wykonane</button></li>
+        <ul id="lista">
+            <li>Wyprowadzić psa<button onclick="wykonane(this)">Wykonane</button></li>
+            <li>Gimnastyka<button onclick="wykonane(this)">Wykonane</button></li>
+            <li>Zakupy<button onclick="wykonane(this)">Wykonane</button></li>
+            <li>Spacer z kumplem<button onclick="wykonane(this)">Wykonane</button></li>
+            <li>Odrabianie lekcji z młodszą siostrą<button onclick="wykonane(this)">Wykonane</button></li>
+            <li>Projekt na geografię<button onclick="wykonane(this)">Wykonane</button></li>
         </ul>
     </main>
     <footer>
