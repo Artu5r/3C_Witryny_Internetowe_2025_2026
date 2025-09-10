@@ -1,0 +1,62 @@
+*{
+    font-family: Verdana;
+}
+
+aside{
+    width: 20%;
+    height: 610px;
+}
+
+img{
+    width: 100%;
+    height: 610px;
+}
+
+header nav footer{
+    background-color: MediumPurple;
+    color: white;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    text-shadow: 4px DimGray;
+}
+
+nav{
+    padding-top: 10px;
+}
+
+main{
+    background-color: Thistle;
+    width: 80%;
+    height: 450px;
+                            background-color: paskiprzewiljania;
+
+}
+
+ul button{
+    float: right;
+    background-color: MediumPurple;
+    color: white;
+    height: 30px;
+    border: none;
+}
+
+ul{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-size: 25px;
+    border: solid 2px MediumPurple;
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+                        background-color: parzyste lelemanety inny kolor;
+}
+
+li:hover{
+    background-color: Lavender;
+}
