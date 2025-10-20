@@ -1,0 +1,14 @@
+Zad1
+a
+
+Zad2
+a
+
+Zad3
+d
+
+Zad4
+b
+
+Zad5
+b

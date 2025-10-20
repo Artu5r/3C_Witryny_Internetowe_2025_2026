@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Aktualna wartość: <span id="sliderValue">50</span></p>
+    <input type="range" id="slider" min="0" max="100" value="50">
+    <script>
+        const slider = document.getElementById("slider");
+        const sliderValue = document.getElementById("sliderValue");
+        slider.addEventListener("input", function() {
+            sliderValue.textContent = slider.value;
+        });
+    </script>
+</body>
+</html>

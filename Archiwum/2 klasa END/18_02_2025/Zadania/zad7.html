@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colorDiv {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorDiv" onmouseover="changeToRed()" onmouseout="changeToGreen()"></div>
+
+    <script>
+        function changeToRed() {
+            document.getElementById("colorDiv").style.backgroundColor = "red";
+        }
+
+        function changeToGreen() {
+            document.getElementById("colorDiv").style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablica dwuwymiarowa 5x5</title>
+    <style>
+      table, th, td {
+          border: 1px solid #000;
+          border-collapse: collapse;
+          padding: 5px;
+          text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <h1>Tablica dwuwymiarowa – 5 wierszy, 5 kolumn</h1>
+    <div id="output"></div>
+
+    <script>
+      var rows = 5;
+      var cols = 5;
+      var startValue = 10;
+      var arr = [];
+      
+      for (var i = 0; i < rows; i++)
+      {
+          arr[i] = [];
+          for (var j = 0; j < cols; j++) {
+              arr[i][j] = startValue++;
+          }
+      }
+      
+      var table = "<table>";
+      for (var i = 0; i < rows; i++)
+      {
+          table += "<tr>";
+          for (var j = 0; j < cols; j++) {
+              table += "<td>" + arr[i][j] + "</td>";
+          }
+          table += "</tr>";
+      }
+      table += "</table>";
+      
+      document.getElementById("output").innerHTML = table;
+    </script>
+</body>
+</html>

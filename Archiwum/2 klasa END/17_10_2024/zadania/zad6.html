@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mieszanie tła i koloru</title>
+    <style>
+        .div {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://i.pinimg.com/736x/06/1c/c4/061cc4f1d2f096d7c7db1033ee3fb13a.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .a1 {
+            background-color: rgba(255, 0, 0, 0.5); /* Czerwony, półprzezroczysty */
+            background-blend-mode: multiply;
+        }
+
+        .a2 {
+            background-color: rgba(0, 255, 0, 0.5); /* Zielony, półprzezroczysty */
+            background-blend-mode: screen;
+        }
+
+        .a3 {
+            background-color: rgba(0, 0, 255, 0.5); /* Niebieski, półprzezroczysty */
+            background-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body>
+    <div class="div a1"></div>
+    <div class="div a2"></div>
+    <div class="div a3"></div>
+</body>
+</html>

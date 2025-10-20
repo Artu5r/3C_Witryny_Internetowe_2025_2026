@@ -1,0 +1,11 @@
+zad1
+a
+
+zad2
+c
+
+zad3
+b
+
+zad4
+a
