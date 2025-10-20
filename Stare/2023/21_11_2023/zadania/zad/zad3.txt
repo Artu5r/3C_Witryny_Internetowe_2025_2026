@@ -1,5 +1,0 @@
-style	bgcolor		red
-a	href	https://...
-font	face	font-family
-p	text-ALIGN right
-meta	name	viewport

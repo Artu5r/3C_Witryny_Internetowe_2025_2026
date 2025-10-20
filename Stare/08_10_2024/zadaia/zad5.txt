@@ -1,3 +1,0 @@
-Program pobiera liczby od urzytkownika i zapisuje do zmiennych a i b
-nastepnie liczy sume tych liczb 
-potem jest warunek jesli a jest mnniejsze od b to wyswietla a, a jak nie to wyswietla b

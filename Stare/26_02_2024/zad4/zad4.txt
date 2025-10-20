@@ -1,6 +1,0 @@
-W HTML5 wprowadzono nowe elementy multimedialne,
-takie jak <video> i <audio>,
-które zastąpiły wcześniejsze metody osadzania multimediów za pomocą elementów OBJECT lub EMBED. 
-
-Element <track>: W HTML5 wprowadzono nowy element <track>,
- który pozwala na dodawanie napisów i podkładów dźwiękowych do elementów <video> i <audio>. Ten element nie istniał w HTML4.

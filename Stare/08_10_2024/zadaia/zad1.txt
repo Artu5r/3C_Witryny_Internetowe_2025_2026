@@ -1,5 +1,0 @@
-zad                                         javascript                    php
-rok powstania                               1995                          1994
-Główny autor                                Brendan Eich                  Rasmusa Lerdorfa
-Wykonywany po stronie klienta/serwera       klienta                       serwera
-Numer ostatniej wersji                      ECMAScript 2024               8.2
