@@ -58,5 +58,40 @@
     <footer>
         <p>Autor strony: <em>000000</em></p>
     </footer>
+
+    <script>
+    function dodajDoKoszyka() {
+    const plikInput = document.getElementById("plik");
+    const kopieInput = document.getElementById("kopie");
+    const wynik = document.getElementById("koszyk");
+
+    if (plikInput.files.length === 0) return;
+
+    const nazwa = plikInput.files[0].name;
+    const kopie = parseInt(kopieInput.value);
+
+    if (isNaN(kopie) || kopie <= 0) return;
+
+    let cenaJednostkowa = document.getElementById("blyszczacy").checked ? 1.5 : 2;
+    let cena = kopie * cenaJednostkowa;
+
+    const img = document.createElement("img");
+    img.src = nazwa;
+    img.title = nazwa;
+    img.alt = "obrazy do sprzedaży";
+    img.style.width = "100px";
+
+    const p1 = document.createElement("p");
+    p1.innerText = "Liczba kopii: " + kopie;
+
+    const p2 = document.createElement("p");
+    p2.innerText = "Cena: " + cena + " zł";
+
+    wynik.appendChild(img);
+    wynik.appendChild(p1);
+    wynik.appendChild(p2);
+}
+</script>
+
 </body>
 </html>
