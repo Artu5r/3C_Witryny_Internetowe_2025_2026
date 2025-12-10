@@ -1,0 +1,7 @@
+SELECT plik, nr_klienta, liczba_odbitek FROM zamowienia WHERE rodzaj = 'matowy' AND liczba_odbitek > 100;
+
+SELECT (liczba_odbitek * cena) AS "Do zapłaty" FROM zamowienia WHERE nr_klienta = 3;
+
+SELECT SUM(liczba_odbitek) AS suma_odbitek FROM zamowienia WHERE rodzaj = 'błyszczący';
+
+CREATE USER 'Anna'@'localhost' IDENTIFIED BY '@NNa';
